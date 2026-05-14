@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Dev Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">Portfolio</span>
+</nav>
+
+<div class="hero">
+  <h1>Welcome to my portfolio!</h1>
+  <h2 class="hero-sub">Below you can view the 2 projects I have coded all by myself</h2>
+  <div class="project-description">
+       I have been coding for about 2 years and I am pretty confident on my skills, as long as it's not a really complex game such as incredibly complex fighting game then I can make it!
+    </div>
+</div>
+
+<div class="projects-container">
+  <div class="project-card" id="runic">
+    <div class="project-header">
+      <h2>Runic Quest</h2>
+      <div class="project-description">
+        My second ever project and its another rpg, my code has sky rocket since the first one. This time however its an open world rpg.
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-main" id="runic-main">
+        <img src="images/Runic/runic1.png" alt="Runic Quest screenshot 1">
+      </div>
+
+      <div class="gallery-thumbs cols-3">
+        <div class="gallery-thumb active" data-src="images/Runic/runic1.png" onclick="swapMain('runic', this)">
+          <img src="images/Runic/runic1.png" alt="Runic Quest thumbnail 1">
+        </div>
+        <div class="gallery-thumb" data-src="images/Runic/runic2.gif" onclick="swapMain('runic', this)">
+          <img src="images/Runic/runic2.gif" alt="Runic Quest thumbnail 2">
+        </div>
+        <div class="gallery-thumb" data-src="images/Runic/runic3.png" onclick="swapMain('runic', this)">
+          <img src="images/Runic/runic3.png" alt="Runic Quest thumbnail 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-divider"></div>
+
+  <div class="project-card" id="ascension">
+    <div class="project-header">
+      <h2>RPG Simulator Ascension</h2>
+      <div class="project-description">
+        My first ever game, I have improved dozens and dozens of times while making this one, It's the sole reason I understand how to propely organize a project.
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-main" id="ascension-main">
+        <img src="images/RPG/Rpg1.png" alt="RPG Simulator Ascension screenshot 1">
+      </div>
+
+      <div class="gallery-thumbs cols-4">
+        <div class="gallery-thumb active" data-src="images/RPG/Rpg1.png" onclick="swapMain('ascension', this)">
+          <img src="images/RPG/Rpg1.png" alt="RPG Ascension thumbnail 1">
+        </div>
+        <div class="gallery-thumb" data-src="images/RPG/Rpg2.png" onclick="swapMain('ascension', this)">
+          <img src="images/RPG/Rpg2.png" alt="RPG Ascension thumbnail 2">
+        </div>
+        <div class="gallery-thumb" data-src="images/RPG/Rpg3.gif" onclick="swapMain('ascension', this)">
+          <img src="images/RPG/Rpg3.gif" alt="RPG Ascension thumbnail 3">
+        </div>
+        <div class="gallery-thumb" data-src="images/RPG/Rpg4.gif" onclick="swapMain('ascension', this)">
+          <img src="images/RPG/Rpg4.gif" alt="RPG Ascension thumbnail 4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /projects-container -->
+
+<script src="main.js"></script>
+</body>
+</html>
