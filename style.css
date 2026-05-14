@@ -21,7 +21,6 @@ body {
   line-height: 1.6;
 }
 
-/* ── NAV ── */
 nav {
   position: sticky;
   top: 0;
@@ -44,7 +43,6 @@ nav {
   text-decoration: none;
 }
 
-/* ── HERO ── */
 .hero {
   padding: 80px 40px 64px;
   max-width: 960px;
@@ -79,7 +77,6 @@ nav {
   padding: 0 40px 48px;
 }
 
-/* ── PROJECTS WRAPPER ── */
 .projects-container {
   max-width: 960px;
   margin: 0 auto;
@@ -93,7 +90,6 @@ nav {
   line-height: 1.6;
 }
 
-/* ── PROJECT CARD ── */
 .project-card {
   margin-bottom: 100px;
   scroll-margin-top: 52px;
@@ -119,7 +115,6 @@ nav {
   margin-bottom: 32px;
 }
 
-/* ── GALLERY ── */
 .gallery {
   margin-bottom: 40px;
 }
@@ -140,7 +135,6 @@ nav {
   transition: opacity 0.25s;
 }
 
-/* thumbs: 3 columns for 3 images, 4 columns for 4 images */
 .gallery-thumbs {
   display: grid;
   gap: 3px;
@@ -169,14 +163,12 @@ nav {
 .gallery-thumb.active    { outline: 2px solid var(--accent); outline-offset: -2px; }
 .gallery-thumb.active img { opacity: 1; }
 
-/* ── DIVIDER ── */
 .project-divider {
   height: 1px;
   background: var(--border);
   margin: 80px 0;
 }
 
-/* ── IMAGE PLACEHOLDER ── */
 .ph {
   width: 100%;
   height: 100%;
@@ -191,7 +183,6 @@ nav {
   text-transform: uppercase;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 680px) {
   nav { padding: 0 20px; }
   .hero { padding: 48px 20px 40px; }
