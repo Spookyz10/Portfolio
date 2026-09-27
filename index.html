@@ -1,89 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Game Dev Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Roblox game development portfolio featuring Bomb Your Friends, Runic Quest and RPG Simulator Ascension. Explore gameplay systems, UI and visual effects."
+    />
+    <meta name="theme-color" content="#101110" />
+    <title>Game Dev Portfolio | Bomb Your Friends & More</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to projects</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-logo" href="#top"
+          ><span class="logo-mark" aria-hidden="true">✳</span> GAME DEV
+          <span class="logo-muted">/ PORTFOLIO</span></a
+        >
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero wrap" aria-labelledby="intro-title">
+        <h1 id="intro-title">I make games<br />on <span>Roblox.</span></h1>
+        <div class="hero-bottom">
+          <p>
+            All three games below are solo projects.<br />
+            I developed them myself, including gameplay, interfaces and visual effects.
+          </p>
+        </div>
+      </section>
+      <div class="wrap" id="projects">
+        <article
+          class="featured project-card"
+          id="bomb"
+          aria-labelledby="bomb-title"
+        >
+          <div class="project-heading">
+            <div>
+              <p class="eyebrow accent">01 / FEATURED PROJECT</p>
+              <h2 id="bomb-title">
+                Bomb Your Friends<span class="title-dot">!</span>
+              </h2>
+            </div>
+            <span class="project-badge">My biggest project yet</span>
+          </div>
+          <div class="project-intro">
+            <p>
+              A Roblox party game with capybaras and bombs. Players compete
+              across several game modes and collect cosmetics between rounds.
+              It’s my biggest project so far.
+            </p>
+            <a
+              class="button-link"
+              href="https://www.roblox.com/games/76731115719804"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on Roblox <span aria-hidden="true">↗</span></a
+            >
+          </div>
 
-<nav>
-  <span class="nav-logo">Portfolio</span>
-</nav>
-
-<div class="hero">
-  <h1>Welcome to my portfolio!</h1>
-  <h2 class="hero-sub">Below you can view the 2 projects I have coded all by myself</h2>
-  <div class="project-description">
-       I have been coding for about 2 years and I am pretty confident on my skills, as long as it's not a really complex game such as incredibly complex fighting game then I can make it!
-    </div>
-</div>
-
-<div class="projects-container">
-  <div class="project-card" id="runic">
-    <div class="project-header">
-      <h2>Runic Quest</h2>
-      <div class="project-description">
-        My second ever project and its another rpg, my code has sky rocket since the first one. This time however its an open world rpg.
+          <div class="gallery" data-gallery="bomb">
+            <button
+              class="gallery-main"
+              type="button"
+              aria-label="Enlarge The world"
+              data-title="The world"
+            >
+              <img
+                src="images/BombYourFriends/overview.jpg"
+                alt="Wide view of the colorful Bomb Your Friends lobby, with capybara characters and the practice arena."
+                width="1486"
+                height="640"
+                fetchpriority="high"
+              /><span class="zoom-hint"
+                >View full image <span aria-hidden="true">↗</span></span
+              >
+            </button>
+            <div class="gallery-meta">
+              <span class="gallery-count">01 / 04</span>
+            </div>
+            <div class="gallery-thumbs" style="--columns: 4">
+              <button
+                class="gallery-thumb active"
+                type="button"
+                data-src="images/BombYourFriends/overview.jpg"
+                data-alt="Wide view of the colorful Bomb Your Friends lobby, with capybara characters and the practice arena."
+                aria-label="Show The world"
+                aria-pressed="true"
+              >
+                <img
+                  src="images/BombYourFriends/overview.jpg"
+                  alt=""
+                  loading="lazy"
+                  width="320"
+                  height="180"
+                /><span>The world</span></button
+              ><button
+                class="gallery-thumb"
+                type="button"
+                data-src="images/BombYourFriends/lobby.jpg"
+                data-alt="Bomb Your Friends player view with a green capybara, colorful HUD buttons and potion controls."
+                aria-label="Show In-game HUD"
+                aria-pressed="false"
+              >
+                <img
+                  src="images/BombYourFriends/lobby.jpg"
+                  alt=""
+                  loading="lazy"
+                  width="320"
+                  height="180"
+                /><span>In-game HUD</span></button
+              ><button
+                class="gallery-thumb"
+                type="button"
+                data-src="images/BombYourFriends/inventory.jpg"
+                data-alt="Blue inventory panel with capybara cards, rarity filters and an Angel Capy 3D preview."
+                aria-label="Show Inventory UI"
+                aria-pressed="false"
+              >
+                <img
+                  src="images/BombYourFriends/inventory.jpg"
+                  alt=""
+                  loading="lazy"
+                  width="320"
+                  height="180"
+                /><span>Inventory UI</span></button
+              ><button
+                class="gallery-thumb"
+                type="button"
+                data-src="images/BombYourFriends/vfx.jpg"
+                data-alt="Gold rings, purple particles and an orange explosion displayed above the practice arena."
+                aria-label="Show Explosion VFX"
+                aria-pressed="false"
+              >
+                <img
+                  src="images/BombYourFriends/vfx.jpg"
+                  alt=""
+                  loading="lazy"
+                  width="320"
+                  height="180"
+                /><span>Explosion VFX</span>
+              </button>
+            </div>
+          </div>
+          <div class="feature-grid">
+            <section>
+              <span class="feature-number">01 / GAMEPLAY</span>
+              <h3>Game modes</h3>
+              <p>
+                Brawl, Bomb Tag, Spleef, Steal the Crown and Dominate the Hill.
+                Players can try out the mechanics in the practice arena between
+                rounds.
+              </p>
+            </section>
+            <section>
+              <span class="feature-number">02 / INTERFACE</span>
+              <h3>Menus and inventory</h3>
+              <p>
+                The inventory, shops, quests and rewards use the same menu
+                style. Players can browse items by category, filter by rarity
+                and see them in 3D.
+              </p>
+            </section>
+            <section>
+              <span class="feature-number">03 / VISUAL EFFECTS</span>
+              <h3>Explosion effects</h3>
+              <p>
+                Explosion cosmetics each have their own colors and particles.
+                There are also effects for skills and combat feedback.
+              </p>
+            </section>
+          </div>
+        </article>
+        <section class="earlier-work" aria-labelledby="earlier-title">
+          <div class="section-heading">
+            <h2 id="earlier-title">Earlier projects</h2>
+            <span>EARLIER WORK</span>
+          </div>
+          <article
+            class="project-card earlier"
+            id="runic"
+            aria-labelledby="runic-title"
+          >
+            <div class="earlier-intro">
+              <p class="eyebrow">02 / OPEN WORLD RPG</p>
+              <h3 id="runic-title">Runic Quest</h3>
+              <p>
+                My second game, an open world RPG. I took what I learned from my
+                first game and worked on more complex systems.
+              </p>
+            </div>
+            <div class="gallery" data-gallery="runic">
+              <button
+                class="gallery-main"
+                type="button"
+                aria-label="Enlarge World"
+                data-title="World"
+              >
+                <img
+                  src="images/Runic/runic1.png"
+                  alt="Runic Quest open world gameplay screenshot."
+                  width="1486"
+                  height="640"
+                  loading="lazy"
+                /><span class="zoom-hint"
+                  >View full image <span aria-hidden="true">↗</span></span
+                >
+              </button>
+              <div class="gallery-meta">
+                <span class="gallery-count">01 / 03</span>
+              </div>
+              <div class="gallery-thumbs" style="--columns: 3">
+                <button
+                  class="gallery-thumb active"
+                  type="button"
+                  data-src="images/Runic/runic1.png"
+                  data-alt="Runic Quest open world gameplay screenshot."
+                  aria-label="Show World"
+                  aria-pressed="true"
+                >
+                  <img
+                    src="images/Runic/runic1.png"
+                    alt=""
+                    loading="lazy"
+                    width="320"
+                    height="180"
+                  /><span>World</span></button
+                ><button
+                  class="gallery-thumb"
+                  type="button"
+                  data-src="images/Runic/runic2.gif"
+                  data-alt="Skills in Runic Quest."
+                  aria-label="Show Skills"
+                  aria-pressed="false"
+                >
+                  <img
+                    src="images/Runic/runic2.gif"
+                    alt=""
+                    loading="lazy"
+                    width="320"
+                    height="180"
+                  /><span>Skills</span></button
+                ><button
+                  class="gallery-thumb"
+                  type="button"
+                  data-src="images/Runic/runic3.png"
+                  data-alt="Bosses in Runic Quest."
+                  aria-label="Show Bosses"
+                  aria-pressed="false"
+                >
+                  <img
+                    src="images/Runic/runic3.png"
+                    alt=""
+                    loading="lazy"
+                    width="320"
+                    height="180"
+                  /><span>Bosses</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="project-card earlier"
+            id="ascension"
+            aria-labelledby="ascension-title"
+          >
+            <div class="earlier-intro">
+              <p class="eyebrow">03 / MY FIRST GAME</p>
+              <h3 id="ascension-title">RPG Simulator<br />Ascension</h3>
+              <p>
+                My first game. This is where I learned to organize my code and
+                fix problems as I built new features.
+              </p>
+            </div>
+            <div class="gallery" data-gallery="ascension">
+              <button
+                class="gallery-main"
+                type="button"
+                aria-label="Enlarge Overview"
+                data-title="Overview"
+              >
+                <img
+                  src="images/RPG/Rpg1.png"
+                  alt="RPG Simulator Ascension gameplay screenshot."
+                  width="1486"
+                  height="640"
+                  loading="lazy"
+                /><span class="zoom-hint"
+                  >View full image <span aria-hidden="true">↗</span></span
+                >
+              </button>
+              <div class="gallery-meta">
+                <span class="gallery-count">01 / 04</span>
+              </div>
+              <div class="gallery-thumbs" style="--columns: 4">
+                <button
+                  class="gallery-thumb active"
+                  type="button"
+                  data-src="images/RPG/Rpg1.png"
+                  data-alt="RPG Simulator Ascension gameplay screenshot."
+                  aria-label="Show Overview"
+                  aria-pressed="true"
+                >
+                  <img
+                    src="images/RPG/Rpg1.png"
+                    alt=""
+                    loading="lazy"
+                    width="320"
+                    height="180"
+                  /><span>Overview</span></button
+                ><button
+                  class="gallery-thumb"
+                  type="button"
+                  data-src="images/RPG/Rpg2.png"
+                  data-alt="Raids GUI in RPG Simulator Ascension."
+                  aria-label="Show Raids GUI"
+                  aria-pressed="false"
+                >
+                  <img
+                    src="images/RPG/Rpg2.png"
+                    alt=""
+                    loading="lazy"
+                    width="320"
+                    height="180"
+                  /><span>Raids GUI</span></button
+                ><button
+                  class="gallery-thumb"
+                  type="button"
+                  data-src="images/RPG/Rpg3.gif"
+                  data-alt="First animated gameplay clip from RPG Simulator Ascension."
+                  aria-label="Show Gameplay 01"
+                  aria-pressed="false"
+                >
+                  <img
+                    src="images/RPG/Rpg3.gif"
+                    alt=""
+                    loading="lazy"
+                    width="320"
+                    height="180"
+                  /><span>Gameplay 01</span></button
+                ><button
+                  class="gallery-thumb"
+                  type="button"
+                  data-src="images/RPG/Rpg4.gif"
+                  data-alt="Second animated gameplay clip from RPG Simulator Ascension."
+                  aria-label="Show Gameplay 02"
+                  aria-pressed="false"
+                >
+                  <img
+                    src="images/RPG/Rpg4.gif"
+                    alt=""
+                    loading="lazy"
+                    width="320"
+                    height="180"
+                  /><span>Gameplay 02</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
       </div>
-    </div>
-
-    <div class="gallery">
-      <div class="gallery-main" id="runic-main">
-        <img src="images/Runic/runic1.png" alt="Runic Quest screenshot 1">
-      </div>
-
-      <div class="gallery-thumbs cols-3">
-        <div class="gallery-thumb active" data-src="images/Runic/runic1.png" onclick="swapMain('runic', this)">
-          <img src="images/Runic/runic1.png" alt="Runic Quest thumbnail 1">
-        </div>
-        <div class="gallery-thumb" data-src="images/Runic/runic2.gif" onclick="swapMain('runic', this)">
-          <img src="images/Runic/runic2.gif" alt="Runic Quest thumbnail 2">
-        </div>
-        <div class="gallery-thumb" data-src="images/Runic/runic3.png" onclick="swapMain('runic', this)">
-          <img src="images/Runic/runic3.png" alt="Runic Quest thumbnail 3">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="project-divider"></div>
-
-  <div class="project-card" id="ascension">
-    <div class="project-header">
-      <h2>RPG Simulator Ascension</h2>
-      <div class="project-description">
-        My first ever game, I have improved dozens and dozens of times while making this one, It's the sole reason I understand how to propely organize a project.
-      </div>
-    </div>
-
-    <div class="gallery">
-      <div class="gallery-main" id="ascension-main">
-        <img src="images/RPG/Rpg1.png" alt="RPG Simulator Ascension screenshot 1">
-      </div>
-
-      <div class="gallery-thumbs cols-4">
-        <div class="gallery-thumb active" data-src="images/RPG/Rpg1.png" onclick="swapMain('ascension', this)">
-          <img src="images/RPG/Rpg1.png" alt="RPG Ascension thumbnail 1">
-        </div>
-        <div class="gallery-thumb" data-src="images/RPG/Rpg2.png" onclick="swapMain('ascension', this)">
-          <img src="images/RPG/Rpg2.png" alt="RPG Ascension thumbnail 2">
-        </div>
-        <div class="gallery-thumb" data-src="images/RPG/Rpg3.gif" onclick="swapMain('ascension', this)">
-          <img src="images/RPG/Rpg3.gif" alt="RPG Ascension thumbnail 3">
-        </div>
-        <div class="gallery-thumb" data-src="images/RPG/Rpg4.gif" onclick="swapMain('ascension', this)">
-          <img src="images/RPG/Rpg4.gif" alt="RPG Ascension thumbnail 4">
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div><!-- /projects-container -->
-
-<script src="main.js"></script>
-</body>
+    </main>
+    <footer class="wrap">
+      <a class="text-link" href="#top"
+        >Back to top <span aria-hidden="true">↑</span></a
+      >
+    </footer>
+    <dialog class="lightbox" aria-label="Project image viewer">
+      <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Close image viewer"
+      >
+        Close <span aria-hidden="true">×</span></button
+      ><img alt="" />
+    </dialog>
+  </body>
 </html>
